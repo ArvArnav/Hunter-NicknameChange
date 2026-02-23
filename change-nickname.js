@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const query = new URLSearchParams(req.query).toString();
 
     const apiResponse = await fetch(
-      `https://danger-change-nickname.vercel.app/change-name?${query}`
+      `https://hunter-ff-namechange.vercel.app/change-name?${query}`
     );
 
     const data = await apiResponse.json();
